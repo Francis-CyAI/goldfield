@@ -70,6 +70,7 @@ footer {
     height: 130%;
 }
 .offering-article p {
+    padding-top: -10px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: var(--large-text-size);

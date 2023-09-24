@@ -18,13 +18,15 @@ class Article {
 
 
 const article = localStorage.getItem('article');
+
 if (article == "cookingOil") {
 	const cookingOil = new Article(
 		"Cooking Oil and Animal Feed",
 		"images/cooking_oil.jpg", 
 		[
-			`Both Broiler and Village chickens are raised to provide
-			a sustainable source of poultry products.`
+			`Groundnuts, soya beans, and sunflower are processed 
+			to extract cooking oil, with the by-products being 
+			utilized to manufacture nutritious animal feed for farmers.`
 		]
 	);
 } else if (article == "porkProducts") {
@@ -32,8 +34,8 @@ if (article == "cookingOil") {
 		"Pig Breeding and Pork Products",
 		"images/piggery.jpg", 
 		[
-			`Both Broiler and Village chickens are raised to provide
-			a sustainable source of poultry products.`
+			`The farm breeds pigs to ensure high quality genetics 
+			and provides healthy pigs to support pork production.`
 		]
 	);
 } else if (article == "fruits") {
@@ -41,8 +43,8 @@ if (article == "cookingOil") {
 		"Fruit Plantations",
 		"images/banana_plantation.jpg", 
 		[
-			`Both Broiler and Village chickens are raised to provide
-			a sustainable source of poultry products.`
+			`Banana and Avocado plantations are maintained 
+			to supply fresh and delicious fruits to the market.`
 		]
 	);
 } else if (article == "compostManure") {
@@ -50,8 +52,9 @@ if (article == "cookingOil") {
 		"Liquid fertilizer and Compost Manure Products",
 		"images/compost_manure.jpg", 
 		[
-			`Both Broiler and Village chickens are raised to provide
-			a sustainable source of poultry products.`
+			`Liquid fertilizer and compost manure are produced 
+			using organic materials to enhance soil fertility
+			 and agricultural productivity.`
 		]
 	);
 }  else if (article == "fishFarming") {
@@ -59,8 +62,7 @@ if (article == "cookingOil") {
 		"Fish Farming",
 		"images/fish_farming.jpg", 
 		[
-			`Both Broiler and Village chickens are raised to provide
-			a sustainable source of poultry products.`
+			`Producing fresh fish direct from the ponds.`
 		]
 	);
 } else if (article == "nurseryPM") {
@@ -68,8 +70,9 @@ if (article == "cookingOil") {
 		"Nursery Plant Management",
 		"images/nursery_plant_management.jpg", 
 		[
-			`Both Broiler and Village chickens are raised to provide
-			a sustainable source of poultry products.`
+			`The nursery manages a diverse selection of plants, 
+			including ornamental plants, flowers and garden 
+			essentials, catering to gardening and landscaping needs.`
 		]
 	);
 } else if (article == "poultryR") {
@@ -86,8 +89,9 @@ if (article == "cookingOil") {
 		"Agricultural Training and consultations",
 		"images/agricultural_training.jpg", 
 		[
-			`Both Broiler and Village chickens are raised to provide
-			a sustainable source of poultry products.`
+			`We provide programs and expert consultations 
+			for aspiring and startup farmers, helping them 
+			achieve success in their farming ventures.`
 		]
 	);
 } else if (article == "vegeCult") {
@@ -95,8 +99,9 @@ if (article == "cookingOil") {
 		"Vegetable Cultivation",
 		"images/vegetable_cultivation.jpg", 
 		[
-			`Both Broiler and Village chickens are raised to provide
-			a sustainable source of poultry products.`
+			`A wide variety of vegetables, including Rape, Chinese, 
+			Cabbage, Okra, Tomatoes, Onions, Green Pepper, Chili, 
+			and Eggplants are cultivated using sustainable farming practices.`
 		]
 	);
 } 
