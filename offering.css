@@ -150,3 +150,69 @@ footer {
 .s-tile-5 {
     background-image: url("images/vegetable_cultivation.jpg");
 }
+
+
+
+@media screen and (max-width: 760px) {
+
+    header {
+       overflow-x: hidden;
+    }
+    header .social-media-icon-holder *, header .contact-info-holder * {
+        position: absolute;
+        width: 0;
+        height: 0;
+        color: transparent;
+        background-color: transparent;
+        z-index: -1;
+    }
+    .footer p {
+        width: 1000%
+    }
+    .offering-article {
+        transform: translateX(0%);
+        width: 100%;
+    }
+    .offering-article img {
+        margin-top: -10%;
+        margin-left: -10%;
+        width: 120%;
+        height: 100%;
+    }
+    .footer .outer-span {
+        position: static;
+        width: 100%;
+    }
+    .footer .outer-span tr {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
+    .os-1 {
+       transform: translate(50%, -130%);
+    }
+    .os-2 {
+        transform: translate(50%, 0%);
+    }
+    .os-3 {
+        transform: translate(-180%, 10%);
+    }
+    :root {
+        --tile-width: 48%;
+        --tile-height: 200px;
+    }
+    .tile-grid {
+        margin-top: 100px;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .tile-holder {
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+    }
+    .tile h1 {
+        padding: 5px;
+        font-size: var(--xlarge-text-size);
+    }
+}

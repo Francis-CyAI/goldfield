@@ -146,6 +146,9 @@ main .slideshow {
 
 
 /* Classes */
+.clickable {
+	cursor: pointer;
+}
 .contact-info-holder {
 	margin-left: 20px;
 }
@@ -242,6 +245,10 @@ main .slideshow {
 	font-size: var(--large-text-size);
 }
 .outer-div h3 {
+	color: var(--leaf-orange);
+}
+.page-title {
+	font-size: var(--xlarge-text-size);
 	color: var(--leaf-orange);
 }
 .products-div {
@@ -458,7 +465,7 @@ main .slideshow {
 	height: 75px;
 	font-size: var(--slarge-text-size);
 	color: var(--bright);
-	background-color: var(--default-gray);
+	background-color: transparent;
 	opacity: .75;
 	border: 1px solid var(--bright);
 	padding-bottom: 10px;
@@ -504,6 +511,10 @@ main .slideshow {
 	height: 15px;
 	margin-top: 3px;
 }
+:root {
+	--tile-width: 450px;
+	--tile-height: 290px;
+}
 .up-down-center-content {
 	display: flex;
 	align-items: center;
@@ -534,14 +545,7 @@ main .slideshow {
 	width: 100%;
 	opacity: .1;
 }
-.footer .outer-span {
-	z-index: 1;
-	max-width: 25%;
-	height: fit-content;
-	margin-left: 25px;
-	margin-right: 25px;
-	justify-content: start;
-}
+
 .site-logo span {
 	font-size: var(--xlarge-text-size);
 	margin-left: 15px;
@@ -549,7 +553,7 @@ main .slideshow {
 .footer .outer-span table h1 {
 	font-size: var(--xlarge-text-size);
 }
-.foooter table h2 {
+.footer table h2 {
 	max-width: 75%;
 }
 .footer .social-media-icon {

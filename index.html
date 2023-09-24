@@ -12,7 +12,7 @@
     <meta name="theme-color" content="black">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-	<title>Ntanga Farm</title>
+	<title>Home</title>
 
 	<!--CSS file for common styles-->
 	<link rel="stylesheet" href="style.css" type="text/css">
@@ -20,7 +20,7 @@
 
 	<!--CSS file for uique styles-->
 	<link rel="stylesheet" href="" type="text/css">
-	
+	<script type="text/javascript" src="commonJS.es6"></script>
 	<!--JS file for initialization-->
 	<!--
 		In essence, the initialization js file loads all the commom
@@ -35,8 +35,8 @@
 			<!-- site-icon -->
 			<img src="icons/image.png" class="large-icon" />
 		</span>
-		<span>GoldField</span>
-		<span>Zambia</span>
+		<span class="gold-field-text">GoldField</span>
+		<span class="gold-field-text">Zambia</span>
 
 		<span class="social-media-icon-holder">
 			<!-- Social Media Icons -->
@@ -85,13 +85,14 @@
 	</header>
 	<main>
 		<div class="colored-line outer-div">
+			<!-- Don't remove: Under investigation-->
 			<span></span> <span></span> <span></span>
 		</div>
 		<div class="outer-div up-down-center-content left-right-center-content menu">
-			<span><a href="#">About</a></span>
-			<span><a href="#">Products</a></span>
-			<span><a href="#">Services</a></span>
-			<span><a href="#">Projects</a></span>
+			<span><a href="#about">About</a></span>
+			<span><a href="#productsDiv">Products</a></span>
+			<span><a href="#servicesDiv">Services</a></span>
+			<span><a href="#innovationCards">Projects</a></span>
 		</div>
 		<div class="outer-div slideshow">
 			<div class="container">
@@ -104,7 +105,7 @@
 			<p>Welcome to GoldField Zambia</p>
 			<h2>Agriculture & Eco Farming</h2>
 		</div>
-		<div class="outer-div innovation-card-holder">
+		<div class="outer-div innovation-card-holder" id="innovationCards">
 			<span class="left-right-center-content innovation-card">
 				<h6>Innovation 1</h6>
 				<p>We are doing...</p>
@@ -136,13 +137,14 @@
 				<p>Some text over here talking about the title</p>
 			</span>
 		</div>
-		<div class="outer-div products-div left-right-center-content ">
+		<div class="outer-div products-div left-right-center-content " id="productsDiv">
 			<h3>Our Products</h3>
 			<p>What we offer</p>
 			<div class="left-right-center-content scrollable-div">
 				<table>
 				<tr class="up-down-center-content">
-					<td class="left-right-center-content table-colmn">
+					<td id="cookingOil" class="clickable left-right-center-content table-colmn">
+						<!--cooking oil-->
 						<span class="up-down-center-content left-right-center-content col-top-box">
 							<img src="icons/image.png" />
 						</span>
@@ -150,15 +152,17 @@
 							<h3>Cooking Oil</h3>
 						</span>
 					</td>
-					<td class="up-down-center-content left-right-center-content table-colmn">
-						<span class="up-down-center-content left-right-center-content col-top-box">
+					<td id="porkProducts" class="clickable up-down-center-content left-right-center-content table-colmn">
+						<!--pork products-->
+						<span class="clickable up-down-center-content left-right-center-content col-top-box">
 							<img src="icons/image.png" />
 						</span>
 						<span class="left-right-center-content col-bottom-box">
 							<h3>Pork Products</h3>
 						</span>
 					</td>
-					<td class="up-down-center-content left-right-center-content table-colmn">
+					<td id="fruits" class="clickable up-down-center-content left-right-center-content table-colmn">
+						<!--fruits-->
 						<span class="up-down-center-content left-right-center-content col-top-box">
 							<img src="icons/image.png" />
 						</span>
@@ -166,7 +170,8 @@
 							<h3>Fruits</h3>
 						</span>
 					</td>
-					<td class="up-down-center-content left-right-center-content table-colmn">
+					<td id="compostManure" class="clickable up-down-center-content left-right-center-content table-colmn">
+						<!--compost manure-->
 						<span class="up-down-center-content left-right-center-content col-top-box">
 							<img src="icons/image.png" />
 						</span>
@@ -178,13 +183,14 @@
 				</table>
 			</div>
 		</div>
-		<div class="outer-div services-div left-right-center-content">
+		<div class="outer-div services-div left-right-center-content" id="servicesDiv">
 			<h3>Our Services</h3>
 			<p>Services we are offering</p>
 			<div class="left-right-center-content scrollable-div">
 				<table>
 				<tr class="up-down-center-content">
-					<td class="left-right-center-content table-colmn">
+					<td id="fishFarming" class="clickable left-right-center-content table-colmn">
+						<!--fish farming-->
 						<span class="up-down-center-content left-right-center-content col-top-box">
 							<img src="icons/image.png" />
 						</span>
@@ -192,7 +198,8 @@
 							<h3>Fish Farming</h3>
 						</span>
 					</td>
-					<td class="up-down-center-content left-right-center-content table-colmn">
+					<td id="nurseryPM" class="clickable up-down-center-content left-right-center-content table-colmn">
+						<!--nursery plant management-->
 						<span class="up-down-center-content left-right-center-content col-top-box">
 							<img src="icons/image.png" />
 						</span>
@@ -200,7 +207,8 @@
 							<h3>Nursery Plant Management</h3>
 						</span>
 					</td>
-					<td class="up-down-center-content left-right-center-content table-colmn">
+					<td id="poultryR" class="clickable up-down-center-content left-right-center-content table-colmn">
+						<!--poultry raring-->
 						<span class="up-down-center-content left-right-center-content col-top-box">
 							<img src="icons/image.png" />
 						</span>
@@ -208,7 +216,8 @@
 							<h3>Poultry Raring</h3>
 						</span>
 					</td>
-					<td class="up-down-center-content left-right-center-content table-colmn">
+					<td id="agricT" class="clickable up-down-center-content left-right-center-content table-colmn">
+						<!--agricultural training-->
 						<span class="up-down-center-content left-right-center-content col-top-box">
 							<img src="icons/image.png" />
 						</span>
@@ -234,7 +243,7 @@
 					</tr>
 					<tr>
 						<td>
-							<h2>
+							<h2 id="about">
 								Just an ordinary paragraph containing a simple summary about ourselves.
 							</h2>
 						</td>
@@ -402,6 +411,7 @@
 
 	<!--The script file referenced by the  tags below will be for generic behaviour.
 	-->
-	<script src=""></script>
+	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="article_selectorJS.es6"></script>
 </body>
 </html>

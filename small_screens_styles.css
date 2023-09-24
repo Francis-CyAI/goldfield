@@ -7,7 +7,7 @@
 
 :root {
 	--default-text-size: 16px;
-	--large-icon-dimension: 75px;
+	--large-icon-dimension: 65px;
 	--large-text-size: 20px;
 	--medium-icon-dimension: 50px;
 	--medium-text-size: 15px;
@@ -20,11 +20,11 @@
 }
 
 /* Tags */
-header, main {
-	position: fixed;
+header span {
+	margin-top: 25px;
 }
 :root {
-	--header-height: 80px;
+	--header-height: 50px;
 }
 header {
 	top: 0;
@@ -44,6 +44,17 @@ header span {
 header span:nth-child(1) {
 	padding-top: -5px;
 	margin-left: 10px;
+}
+main { /* ?? */
+	top: calc(var(--header-height) + 25px);
+	left: 0;
+	width: 100%;
+	/* height: fit-content; */
+	min-height: calc(100% - var(--header-height));
+	background-color: var(--twighlight-darkness);
+	overflow-x: hidden;
+
+	/* overflow-y: auto; */
 }
 /*
 header span:nth-child(1) img {
@@ -139,6 +150,9 @@ main .slideshow {
 .contact-info a span p:nth-child(2) {
 	margin-top: 2px;
 }
+.gold-field-text {
+	font-size: var(--large-text-size);
+}
 :root {
 	/* Arranged in the order they appear in html. */
 	--slide-show-height: 650px; /* Keep */
@@ -198,8 +212,7 @@ main .slideshow {
 	background-color: var(--bright);
 }
 .menu span a {
-	color: var(--twighlight-fog);
-	font-size: var(--large-text-size);
+	font-size: var(--medium-text-size);
 }
 .outer-div h3 {
 	color: var(--leaf-orange);
@@ -248,6 +261,7 @@ main .slideshow {
 	--col-width: 200px;
 	--col-from-edge: 50px;
 }
+
 .table-colmn span {
 	position: absolute;
 	border-radius: var(--col-border-radius);
@@ -360,6 +374,30 @@ main .slideshow {
   	width: 250%;
   	margin-left: -75%;
 }
+.slideshow button {
+	position: absolute;
+	top: -10px;
+	width: 65px;
+	height: 65px;
+	font-size: var(--ularge-text-size);
+	padding-bottom: 35px;
+	border-color: transparent;
+
+}
+#prevBtn {
+	top: -10px;
+	left: 15px;
+}
+#nextBtn {
+	right: 20px;
+}
+.showcase-div img:nth-child(1) {
+	left: 50%;
+	transform: translateX(-50%);
+}
+.showcase-div img:nth-child(2) {
+	border: 10px solid var(--less-bright);
+}
 .small-icon {
 	width: var(--small-icon-dimension);
 	height: var(--small-icon-dimension);
@@ -427,17 +465,27 @@ main .slideshow {
 	top: 400px;
 }
 .os-3 {
-	top: 500px;
+	top: 450px;
 }
 .site-logo span {
 	font-size: var(--xlarge-text-size);
 	margin-left: 15px;
 }
-.site-logo span:nth-child(1), .site-logo span:nth-child(2){
-
-} 
-.foooter table h2 {
-	max-width: 75%;
+.footer tr:first-of-type {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.footer .outer-span {
+	z-index: 1;
+	max-width: calc(100% - 10px);
+	height: fit-content;
+	margin-left: 5px;
+	margin-right: 25px;
+	justify-content: start;
+}
+.footer table h2 {
+	max-width: 85%;
 }
 .footer .social-media-icon {
 	background-color: rgba(0, 0, 0, .2);
@@ -450,6 +498,10 @@ main .slideshow {
 }
 .footer-cont-span {
 	margin-left:  20px;
+}
+.footer-cont-img {
+	width: 30px;
+	height: 30px;
 }
 .footer .copyright-info {
 	position: absolute;
