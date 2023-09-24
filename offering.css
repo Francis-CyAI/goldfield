@@ -36,7 +36,7 @@ footer {
     border-radius: 20px;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin-top:  200px;
+    margin-top:  150px;
     margin-bottom: 100px;
 }
 .offering-article .title-holder {
@@ -167,12 +167,16 @@ footer {
         background-color: transparent;
         z-index: -1;
     }
+    .header span {
+        font-size: var(--large-text-size);
+    }
     .footer p {
         width: 1000%
     }
     .offering-article {
         transform: translateX(0%);
         width: 100%;
+        margin-top:  50px;
     }
     .offering-article img {
         margin-top: -10%;
@@ -183,6 +187,8 @@ footer {
     .offering-article .title-holder h1 {
         width: 90%;
         margin-left: 5%;
+        font-size: var(--large-text-size);
+
     }
     .footer .outer-span {
         position: static;
@@ -218,6 +224,6 @@ footer {
     }
     .tile h1 {
         padding: 5px;
-        font-size: var(--xlarge-text-size);
+        font-size: var(--large-text-size);
     }
 }
