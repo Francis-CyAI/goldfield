@@ -52,7 +52,7 @@ footer {
 }
 .offering-article .title-holder h1 {
     color: var(--bright);
-    font-size: var(--slarge-text-size);
+    font-size: var(--xlarge-text-size);
 }
 .offering-article .img-holder {
     position: absolute;
@@ -178,6 +178,10 @@ footer {
         margin-left: -10%;
         width: 120%;
         height: 100%;
+    }
+    .offering-article .title-holder h1 {
+        width: 90%;
+        margin-left: 5%;
     }
     .footer .outer-span {
         position: static;
